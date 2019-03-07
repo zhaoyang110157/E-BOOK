@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in</title>
+
+    <script src="../js/var.js"></script>
+    <link rel="stylesheet" href="cus.css">
+</head>
+<body >
+ <!--This is a login interface. I set two button to change the construction of the window.
+      One log in, One register. It went to the main page, when the first clicked, and it went
+      to the register page on the other condition. I also set two button on the register page,
+      on to submit their register and the other to go back to the logging in page.-->
+
+    <div  id="t"  class="container">
+        <div class="title">
+            E-BOOK &nbsp;SYSTEM &nbsp;0.0.1
+        </div>
+        <div class="container box"   v-show="!up">
+            <div>username:<input type="text" placeholder="zhaoyang" v-model="username"></div><br>
+            <div>password:<input type="password" placeholder="********" v-model="password"></div><br>
+            <div>
+                <button  @click="url">sign in</button>
+                &nbsp;
+                <button  @click="up=!up" >sign up</button>
+            </div>
+            <br><br><hr>
+            <div class="foot">
+              © 2019 上海交通大学软件学院 朱朝阳
+            </div>
+        </div>
+        <div class="container box"  v-show="up">
+            <div>username: &nbsp;<input type="text" placeholder="zhaoyang" v-model="username"></div><br>
+            <div>password: &nbsp;<input type="text" placeholder="********" v-model="password"></div><br>
+            <div>&nbsp;confirm:&nbsp;&nbsp;&nbsp;<input type="text" placeholder="********" v-model="confirm"></div><br>
+            <div>&nbsp;&nbsp;e-mail:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="****@**.com" v-model="mail"></div><br>
+            <div>
+                <button  @click="url2">submit</button>
+                &nbsp;
+                <button  @click="up=!up">back</button><!--class="btn btn-info"-->
+            </div>
+            <br><br><hr>
+            <div  class="foot">
+                © 2019 上海交通大学软件学院 朱朝阳
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../../vue/vue.js"></script><
+    <script type="text/javascript">
+         new Vue({
+            el:'#t',
+            data:{
+                up: false,
+                username:"",
+                password:"",
+                confirm:"",
+                mail:""
+            },
+             methods:{
+                url(){//log in successfully
+                    window.location.href="../index/index.html" ;
+                    //window.location.href="../index/index.html?flog=true" ;
+                },
+                url2(){//happens when succeed
+                    alert("Registered Successfully");
+                    window.location.href="../index/index.html" ;
+                }
+             }
+        })
+    </script>
+</body>
+</html>

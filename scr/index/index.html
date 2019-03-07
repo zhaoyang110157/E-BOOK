@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="adm.css">
+</head>
+<!--
+After checking many websites of book city, I want to set the homepage into two parts.
+ The left half is categories, the right half is sample books, and I also need the search bar.
+-->
+<body>
+<div id="main">
+    <div id="search">
+        <div id="search1">Welcome to THE E-BOOK SYSTEM</div>
+        <div id="search2">Search for: &nbsp;&nbsp;<input type="text" placeholder="title" v-model="book"></div><br>
+        <div id="search4" @click="check">购物车</div>
+        <div id="search3" @click="log() " v-show="!flog" >Sign in/sign up</div>
+    </div>
+
+    <div id="lhs">
+        <div class="btype">期刊/报纸/外文原版</div>
+        <div class="btype">小说/文学/语言文字</div>
+        <div class="btype">历史/地理/艺术</div>
+        <div class="btype">政治/法律/军事</div>
+        <div class="btype">哲学/心理/宗教</div>
+        <div class="btype">经济/社科/综合</div>
+        <div class="btype">工程技术/互联网</div>
+        <div class="btype">自然科学/医药卫生</div>
+        <div class="btype">教材/教辅/考试</div>
+    </div>
+    <div id="rhs" class="container-fluid">
+        <div class="row">
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+            <div class="col col-md-3 cell">
+                <img src="../image/nuowei.jpg" alt="" width="100%">
+                <div>
+                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
+                        <!--书本详情页-->
+                    </div><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="but"> <a href="#"><img src="../image/to top.jpg" height="30" width="30" alt="回到顶部"/></a></div>
+    <div id="copyright" >
+        <div class="container">
+            Copyright © 2019.Company name All rights reserved.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../vue/vue.js"></script>
+<script type="text/javascript">
+
+    new Vue({
+        el:'#main',
+        data:{
+            book:"",
+            flog:false
+        },
+        methods:{
+            log(){
+                window.location.href="../login/sign.html" ;
+            },
+            check(){
+
+            }//购物车效果
+        }
+    })
+</script>
+</body>
+<!--<script type="text/javascript">
+    $(document).ready( function () {
+        const str = window.location.search;   //location.search是从当前URL的?号开始的字符串
+        const v=str.substr(str.indexOf('=')+1) ;
+        if( v === "true") vm.data.flog=true;
+    })
+</script>-->
+</html>
+
