@@ -14,8 +14,6 @@ After checking many websites of book city, I want to set the homepage into two p
 <body>
 <div id="main">
     <div id="search">
-        <div id="search1">Welcome to THE E-BOOK SYSTEM</div>
-        <div id="search2">Search for: &nbsp;&nbsp;<input type="text" placeholder="title" v-model="book"></div><br>
         <div id="search4" @click="check">购物车</div>
         <div id="search3" @click="log() " v-show="!flog" >Sign in/sign up</div>
     </div>
@@ -36,7 +34,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s1" @click="cc('s1')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -45,7 +43,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s2" @click="cc('s2')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -54,7 +52,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s3" @click="cc('s3')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -63,7 +61,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s4" @click="cc('s4')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -74,7 +72,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s5" @click="cc('s5')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -83,7 +81,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s6" @click="cc('s6')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -92,7 +90,7 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s7" @click="cc('s7')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
@@ -101,52 +99,12 @@ After checking many websites of book city, I want to set the homepage into two p
             <div class="col col-md-3 cell">
                 <img src="../image/nuowei.jpg" alt="" width="100%">
                 <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
+                    <p style="display: inline" id="s8" @click="cc('s8')">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
                     <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
                         <!--书本详情页-->
                     </div><br>
                 </div>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="col col-md-3 cell">
-                <img src="../image/nuowei.jpg" alt="" width="100%">
-                <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
-                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
-                        <!--书本详情页-->
-                    </div><br>
-                </div>
-            </div>
-            <div class="col col-md-3 cell">
-                <img src="../image/nuowei.jpg" alt="" width="100%">
-                <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
-                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
-                        <!--书本详情页-->
-                    </div><br>
-                </div>
-            </div>
-            <div class="col col-md-3 cell">
-                <img src="../image/nuowei.jpg" alt="" width="100%">
-                <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
-                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
-                        <!--书本详情页-->
-                    </div><br>
-                </div>
-            </div>
-            <div class="col col-md-3 cell">
-                <img src="../image/nuowei.jpg" alt="" width="100%">
-                <div>
-                    <p style="display: inline">挪威的森林</p>  <p style="display: inline">作者： 村上春树</p>
-                    <div>故事讲述主角纠缠在情绪不稳定且患有精神疾病的直子和开朗活泼的小林绿子之间，展开了自我成长的旅程。<a href="../inf/bookinfor.html">更多》</a>
-                        <!--书本详情页-->
-                    </div><br>
-                </div>
-            </div>
-
         </div>
     </div>
     <div id="but"> <a href="#"><img src="../image/to top.jpg" height="30" width="30" alt="回到顶部"/></a></div>
@@ -172,9 +130,15 @@ After checking many websites of book city, I want to set the homepage into two p
             },
             check(){
 
-            }//购物车效果
+            },//购物车效果,
+            cc(id){
+                 document.getElementById(id).style.color="red";
+
+            }
         }
     })
+
+
 </script>
 </body>
 <!--<script type="text/javascript">
